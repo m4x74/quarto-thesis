@@ -54,4 +54,6 @@ format:
     urlcolor: red
     toclinkcolor: black
     toc-depth: 2
+    geometry: paper = a4paper
+    classoption: ["11pt", "english", "singlespacing", "headsepline"]
 
