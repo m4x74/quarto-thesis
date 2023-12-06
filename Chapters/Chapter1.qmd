@@ -61,7 +61,9 @@ Sunil's template was made available through [LaTeXTemplates](http://www.LaTeXTem
 Most of the personal information is found on in the `_quarto.yml` file.
 
 * author -- you; optionally add url
-* supervisor -- your supervisor; optionally add url.
+* supervisor -- supervisor information; for multiple supervisors see [here](https://github.com/nmfs-opensci/quarto-thesis/discussions/8)
+    * name -- your supervisors name;
+    * url -- your supervisors website (optional);
 * university -- your university
 * department -- your department
 * faculty -- faculty name
@@ -145,7 +147,8 @@ Again we write in Quarto (markdown) not \LaTeX{} for our figures. You can write 
 
     ```{{r}}
     #| label: fig-cars
-    #| fig-cap: This is my caption.
+    #| fig-cap: This is a regular caption.
+    #| fig-scap: Short caption used in the list of figures (optional).
     plot(mtcars[,1:4])
     ```
 
@@ -154,7 +157,8 @@ The `#|` is what sets up our cross-references and you can then reference the tab
 
 ```{r}
 #| label: fig-cars
-#| fig-cap: This is my caption.
+#| fig-cap: This is a regular caption.
+#| fig-scap: Short caption used in the list of figures (optional).
 plot(mtcars[,1:4])
 ```
 
